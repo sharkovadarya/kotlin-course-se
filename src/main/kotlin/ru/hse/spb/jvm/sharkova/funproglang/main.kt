@@ -24,6 +24,6 @@ fun main(args: Array<String>) {
     try {
         interpreter.evaluate(parser.file())
     } catch (e: Exception) {
-        println("Failed to interpret file. Cause:\n${e.message}" + e.message)
+        println("Failed to interpret file. Cause:\n${e.message}")
     }
 }
