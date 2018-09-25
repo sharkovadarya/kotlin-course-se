@@ -4,6 +4,7 @@ import org.antlr.v4.runtime.BaseErrorListener
 import org.antlr.v4.runtime.RecognitionException
 import org.antlr.v4.runtime.Recognizer
 
+data class Value(val value: Int = 0, val isResult: Boolean = false)
 
 data class Function(val name: String, val function: (List<Int>) -> Value)
 
