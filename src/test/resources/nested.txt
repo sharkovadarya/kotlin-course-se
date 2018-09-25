@@ -1,0 +1,19 @@
+fun function(a) {
+    var b = a * 4
+    fun nestedFunction() {
+        var b = 11
+        println(b)
+    }
+    nestedFunction()
+    println(b)
+}
+function(2)
+
+if (30 * 59 > 111 + 100) {
+    fun function(a) {
+        println(a + 30)
+    }
+    function(59)
+} else {
+    function(59)
+}

@@ -1,0 +1,11 @@
+fun function1(a) {
+    fun function2(a) {
+        println(a + 2)
+    }
+
+    function2(a)
+    return a + 3
+}
+
+function1(2)
+function2(2)

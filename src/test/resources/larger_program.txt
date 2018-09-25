@@ -1,0 +1,36 @@
+// function to find the biggest value out of three provided
+fun biggestOfThreeNumbers(a, b, c) {
+    if (a > b && a > c) {
+        return a
+    }
+
+    if (b > a && b > c) {
+        return b
+    } else {
+        return c
+    }
+}
+
+fun iterate(a, b, c) {
+    while (biggestOfThreeNumbers(a, b, c) != c) {
+        c = c + 1
+    }
+
+    return c
+}
+
+var a = 13
+var b = 12
+var c
+
+fun initializeC(a, b) {
+    if ((a % b) > 3) {
+        c = 4
+    } else {
+        c = 2
+    }
+}
+
+initializeC(a, b)
+
+println(iterate(a, b, c))
